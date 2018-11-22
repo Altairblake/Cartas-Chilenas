@@ -18,19 +18,12 @@ echo.
 REM /g 0 22 onde 0 é a coluna e 22 a linha a partir da qual o texto/saida de comando será printado"
 "plugins\batbox.exe" /g 0 22
 Title Cartas Chilenas - Menu principal
-"plugins\cmdmenusel.exe" f870 " Iniciar " " As Cartas " " Sobre " " Tutorial " " Sair "
+"plugins\cmdmenusel.exe" f870 " Iniciar " " Sair "
 GOTO %errorlevel%
 :1
 	cd letter1
 	start loading.bat
 	exit
 :2
-	start "menu\index.cmd"
-	exit
-:3
-	start "menu\about.cmd"
-	exit
-:4
-	start "menu\tutorial.cmd"
 	exit
 pause 
